@@ -25,7 +25,7 @@ if (!(Test-Path $Directory -PathType Container))
 	New-Item -ItemType Directory -Force -Path $Directory
 }
 # Change the credentials to match your work/school email
-Login-AzureRmAccount -Credential (get-credential -Credential anthony@configmgr.com)
+Login-AzureRmAccount -Credential 
 
 # Create New Resource Group
 $AsrRG = New-AzureRmResourceGroup -Name $RgName -Location $Location
